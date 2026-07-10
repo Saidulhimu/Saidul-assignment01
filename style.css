@@ -1,81 +1,96 @@
-/* * {
-    margin: 0;
-    padding: 0;
-    font-family: "Open Sans", sans-serif;
-}
-
-img {
-    max-width: 100%;
-}
-
-.common-btn {
-    background-color: #FD6E0A;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
-} */
-
-/* --- 1. Global Reset (Removes annoying default browser spacing) --- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif; /* Clean, modern font */
+
 }
 
-/* --- 2. Navbar Container --- */
+/* Navbar Container */
 .navbar {
     display: flex;
-    justify-content: space-between; /* Pushes Logo to left, Menu to center, Button to right */
-    align-items: center;            /* Centers all items vertically */
-    padding: 15px 50px;             /* 15px top/bottom padding, 50px left/right padding */
-    background-color: #ffffff;      /* Clean white background */
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #ffffff;
 }
 
-/* --- 3. Logo Styling --- */
+/* Logo  */
 .nav-logo img {
-    height: 45px;                   /* Adjust this value to make your logo bigger or smaller */
-    display: block;                 /* Removes any weird bottom spacing gaps under images */
+    height: 45px;
+    display: block;
 }
 
-/* --- 4. Center Menu Styling --- */
+/* Center Menu Styling */
 .nav-menu {
     display: flex;
-    list-style: none;               /* Removes the bullet points */
-    gap: 35px;                      /* Puts uniform space between each menu link */
+    list-style: none;
+    gap: 35px;
 }
 
 .nav-menu a {
-    text-decoration: none;          /* Removes the default underline */
-    color: #475569;                 /* Modern slate/grey color */
+    text-decoration: none;
+    color: #475569;
     font-size: 16px;
     font-weight: 500;
-    transition: color 5s ease;    
+    transition: color 0.3s ease;
 }
 
-/* Hover effect: The link changes color when you hover over it */
 .nav-menu a:hover {
-    color: #2563eb;                
+    color: #2563eb;
 }
 
-/* --- 5. Right Button Styling --- */
+/* Right Button */
 .btn-register {
-    background-color: #2563eb;      
+    background-color: #2563eb;
     color: #ffffff;
     border: none;
-    padding: 12px 28px;            
+    padding: 12px 28px;
     font-size: 16px;
     font-weight: 600;
-    border-radius: 8px;            
-    cursor: pointer;                
+    border-radius: 8px;
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-/* Button Hover Effect */
 .btn-register:hover {
-    background-color: #0844e8;      /* Slightly darker blue when hovered */
+    background-color: #0844e8;
+}
+
+
+/* Hero Banner Section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 50px ;
+   
+}
+
+
+.hero-content {
+    max-width: 800px;
+    color: #ffffff;
+    
+}
+
+.hero-title {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    letter-spacing: -1px;
+}
+
+.hero-description {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    color: #e2e8f0;
+  
 }
